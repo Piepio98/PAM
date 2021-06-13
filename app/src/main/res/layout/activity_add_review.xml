@@ -27,7 +27,7 @@
         android:id="@+id/add_review_brewery"
         android:layout_width="205dp"
         android:layout_height="35dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:hint="Brewery"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/add_review_name" />
