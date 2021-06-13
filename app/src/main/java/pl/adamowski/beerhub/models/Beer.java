@@ -6,6 +6,7 @@ public class Beer {
     private String name;
     private String brewery;
     private String style;
+    private int supa;
 
     public Beer() {
     }
