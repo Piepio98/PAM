@@ -48,7 +48,7 @@
                 android:layout_height="48dp"
                 android:layout_margin="8dp"
                 android:gravity="center_vertical"
-                android:text="Przegladaj piwa"
+                android:text="Przegladaj miejsca z piwem"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toRightOf="@id/book_image_view"
                 app:layout_constraintRight_toRightOf="parent"
@@ -81,7 +81,7 @@
                 app:layout_constraintRight_toLeftOf="@id/second_menu_text_view"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_chainStyle="packed"
-                app:srcCompat="@drawable/local_drink" />
+                app:srcCompat="@drawable/ic_comment" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/second_menu_text_view"
@@ -89,7 +89,7 @@
                 android:layout_height="48dp"
                 android:layout_margin="8dp"
                 android:gravity="center_vertical"
-                android:text="Dodawaj komentarze do piw"
+                android:text="Oceń piwo"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toRightOf="@id/library_book_image_view"
                 app:layout_constraintRight_toRightOf="parent"
