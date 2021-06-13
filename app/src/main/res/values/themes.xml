@@ -21,4 +21,12 @@
         <item name="cardUseCompatPadding">true</item>
         <item name="contentPadding">10dp</item>
     </style>
+
+    <style name="CardView.add_review">
+        <item name="cardCornerRadius">5dp</item>
+        <item name="cardBackgroundColor">@color/beery</item>
+        <item name="cardElevation">5dp</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="contentPadding">10dp</item>
+    </style>
 </resources>

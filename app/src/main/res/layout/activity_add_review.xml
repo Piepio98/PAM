@@ -6,50 +6,84 @@
     android:layout_height="match_parent"
     tools:context=".AddReviewActivity">
 
-    <EditText
-        android:id="@+id/add_review_style"
-        android:layout_width="205dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="60dp"
-        android:hint="Style"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_review_name" />
 
-    <EditText
-        android:id="@+id/add_review_name"
-        android:layout_width="207dp"
-        android:layout_height="39dp"
-        android:hint="Name"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/add_review_brewery"
-        android:layout_width="205dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="12dp"
-        android:hint="Brewery"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_review_name" />
-
-    <EditText
-        android:id="@+id/add_review_comment"
-        android:layout_width="match_parent"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/first_card_view"
+        style="@style/CardView.add_review"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
-        android:hint="Comment"
-        app:layout_constraintTop_toBottomOf="@+id/add_review_brewery"
-        tools:layout_editor_absoluteX="-16dp" />
+        android:layout_margin="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/add_review_brewery"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:hint="Browar" />
+
+        <EditText
+            android:id="@+id/add_review_name"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:hint="Nazwa piwa" />
+
+        <EditText
+            android:id="@+id/add_review_style"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:hint="Styl" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/second_card_view"
+        style="@style/CardView.add_review"
+        android:layout_width="319dp"
+        android:layout_height="217dp"
+        app:layout_constraintBottom_toTopOf="@+id/add_review_confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_card_view">
+
+        <EditText
+            android:id="@+id/add_review_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="72dp"
+
+            android:hint="Komentarz"
+            app:layout_constraintBottom_toTopOf="@+id/add_review_confirm"
+            app:layout_constraintTop_toBottomOf="@+id/first_card_view"
+            app:layout_constraintVertical_bias="0.978"
+            tools:layout_editor_absoluteX="16dp" />
+
+    </androidx.cardview.widget.CardView>
 
     <Button
         android:id="@+id/add_review_confirm"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
+        android:layout_marginBottom="36dp"
         android:text="Dodaj"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_review_comment"
-        app:layout_constraintVertical_bias="0.91"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/piwa"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
