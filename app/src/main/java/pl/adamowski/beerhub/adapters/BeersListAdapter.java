@@ -2,17 +2,18 @@
 package pl.adamowski.beerhub.adapters;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-
-import java.text.SimpleDateFormat;
 import java.util.List;
 
 import pl.adamowski.beerhub.R;
@@ -22,6 +23,8 @@ public class BeersListAdapter extends RecyclerView.Adapter<BeersListAdapter.View
 
     private List<Beer> beers;
     //konstruktor
+    private Context context;
+
 
     public BeersListAdapter(List<Beer> beers){
         this.beers= beers;
@@ -39,6 +42,7 @@ public class BeersListAdapter extends RecyclerView.Adapter<BeersListAdapter.View
         // Return a new holder instance
         ViewHolder viewHolder = new ViewHolder(contactView);
         return viewHolder;
+
     }
 
     @Override
@@ -46,14 +50,39 @@ public class BeersListAdapter extends RecyclerView.Adapter<BeersListAdapter.View
 
         Beer beer = beers.get(position);
 
-        TextView textViewTitle = holder.textView_Name;
-        textViewTitle.setText(beer.getBrewery());
+        TextView textViewName = holder.textView_Name;
+        textViewName.setText(beer.getBrewery());
 
-        TextView textViewAuthor = holder.textView_Brewery;
-        textViewAuthor.setText(beer.getName());
+        TextView textViewBrewery = holder.textView_Brewery;
+        textViewBrewery.setText(beer.getName());
 
-        TextView textViewDate = holder.textView_Style;
-        textViewDate.setText(beer.getStyle());
+        TextView textViewStyle = holder.textView_Style;
+        textViewStyle.setText(beer.getStyle());
+
+        Button textViewButton = holder.textView_Button;
+
+//        textViewButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                context = v.getContext();
+//                Intent intent = new Intent(context,MapsActivity.class);
+//                context.startActivity(intent);
+//            }
+//        });
+
+        textViewButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                        String uri = "http://maps.google.com/maps?q=" + beer.getLat() + "," + beer.getLon();
+                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+                        intent.setPackage("com.google.android.apps.maps");
+                        context = v.getContext();
+                        context.startActivity(intent);
+            }
+        });
+
+
+
     }
 
     @Override
@@ -66,6 +95,7 @@ public class BeersListAdapter extends RecyclerView.Adapter<BeersListAdapter.View
         public TextView textView_Name;
         public TextView textView_Brewery;
         public TextView textView_Style;
+        public Button textView_Button;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -73,6 +103,15 @@ public class BeersListAdapter extends RecyclerView.Adapter<BeersListAdapter.View
             textView_Name = (TextView) itemView.findViewById(R.id.Name);
             textView_Brewery = (TextView) itemView.findViewById(R.id.Brewery);
             textView_Style = (TextView) itemView.findViewById(R.id.Style);
+            textView_Button = (Button) itemView.findViewById(R.id.button_location);
+
+
         }
     }
+
+
+
+
+
+
 }
