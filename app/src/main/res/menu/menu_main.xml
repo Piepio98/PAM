@@ -4,7 +4,7 @@
     <item
         android:id="@+id/Beers_List"
         android:orderInCategory="1"
-        android:title="Lista piw"
+        android:title="Miejsca warte uwagi"
         app:showAsAction="never" />
     <item
         android:id="@+id/Add_Review"

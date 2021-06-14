@@ -29,11 +29,22 @@ public class BeerListActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        Beer piwo1 = new Beer ("Dupa","Poslady","dada");
-        Beer piwo2 = new Beer ("Ddas","Poffdy","daasdfda");
+        Beer piwo1 = new Beer ("Piw Paw","Foksal 16, 00-372 Warszawa","Pub");
+        Beer piwo2 = new Beer ("Stan Umysłu","Efraima Schroegera 83, 01-828 Warszawa","Sklep");
+        Beer piwo3 = new Beer ("PIWOmaniaK","al. Jana Pawła II 61, 01-031 Warszawa","Sklep");
+        Beer piwo4 = new Beer ("Piwny Kolektyw","Siemiatycka 36, 01-312 Warszawa","Sklep");
+        Beer piwo5 = new Beer ("Bierhalle","al. Jana Pawła II 82, 00-175 Warszawa","Restauracja");
+        Beer piwo6 = new Beer ("JABEERWOCKY Craft Beer Pub","Nowogrodzka 12, 00-511 Warszawa","Pub");
+        Beer piwo7 = new Beer ("Stan Umysłu","Efraima Schroegera 83, 01-828 Warszawa","Sklep");
+        Beer piwo8 = new Beer ("White Whale","Giełdowa 4E/U1, 01-211 Warszawa","Sklep");
 
         beers.add(piwo1);
         beers.add(piwo2);
+        beers.add(piwo3);
+        beers.add(piwo4);
+        beers.add(piwo5);
+        beers.add(piwo6);
+        beers.add(piwo7);
 
         for (Beer i : beers){
             Log.d("Lista zawiera piwo: ",i.toString());
