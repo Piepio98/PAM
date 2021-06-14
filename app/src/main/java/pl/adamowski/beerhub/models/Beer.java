@@ -11,7 +11,7 @@ public class Beer {
     }
 
 
-    public Beer(String name, String brewery, String style) {
+    public Beer(String brewery, String name, String style) {
         this.name = name;
         this.brewery = brewery;
         this.style = style;

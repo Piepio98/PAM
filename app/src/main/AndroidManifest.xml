@@ -16,7 +16,7 @@ android:theme="@style/Theme.BeerHub">
         android:label="Dodaj recenzje"/>
 
     <activity android:name=".BeerListActivity"
-        android:label="Lista piw" />
+        android:label="Miejsca warte uwagi" />
 
     <activity android:name=".ReviewsListActivity"
         android:label="Lista recenzji"/>
