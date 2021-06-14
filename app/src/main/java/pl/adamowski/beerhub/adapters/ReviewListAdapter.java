@@ -49,7 +49,7 @@ public class ReviewListAdapter extends RecyclerView.Adapter<ReviewListAdapter.Vi
         Review review = reviews.get(position);
 
         TextView textViewId = holder.textView_id;
-        textViewId.setText(""+review.getId());
+        textViewId.setText("Numer recenzji: "+review.getId());
 
         TextView textViewName = holder.textView_name;
         textViewName.setText(review.getName());
