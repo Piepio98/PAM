@@ -43,12 +43,12 @@
                 android:layout_marginBottom="16dp"
                 android:text="Brewery"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/button"
+                app:layout_constraintStart_toEndOf="@+id/button_location"
                 app:layout_constraintTop_toBottomOf="@+id/Name"
                 app:layout_constraintVertical_bias="0.194" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/button_location"
                 android:layout_width="94dp"
                 android:layout_height="56dp"
                 android:layout_marginStart="4dp"
@@ -66,7 +66,7 @@
                 android:layout_marginStart="24dp"
                 android:text="Style"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/button"
+                app:layout_constraintStart_toEndOf="@+id/button_location"
                 app:layout_constraintTop_toBottomOf="@+id/Brewery"
                 app:layout_constraintVertical_bias="0.578" />
 
@@ -75,7 +75,7 @@
                 android:layout_width="40dp"
                 android:layout_height="48dp"
                 android:layout_marginStart="4dp"
-                app:layout_constraintBottom_toTopOf="@+id/button"
+                app:layout_constraintBottom_toTopOf="@+id/button_location"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0"
