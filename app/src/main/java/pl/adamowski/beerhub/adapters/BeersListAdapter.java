@@ -61,19 +61,11 @@ public class BeersListAdapter extends RecyclerView.Adapter<BeersListAdapter.View
 
         Button textViewButton = holder.textView_Button;
 
-//        textViewButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                context = v.getContext();
-//                Intent intent = new Intent(context,MapsActivity.class);
-//                context.startActivity(intent);
-//            }
-//        });
 
         textViewButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                        String uri = "http://maps.google.com/maps?q=" + beer.getLat() + "," + beer.getLon();
+                        String uri = "https://www.google.com/maps/place/" + beer.getLocation();
                         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
                         intent.setPackage("com.google.android.apps.maps");
                         context = v.getContext();

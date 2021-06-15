@@ -8,17 +8,19 @@ public class Beer {
     private String style;
     private double lat;
     private double lon;
+    private String location;
 
     public Beer() {
     }
 
 
-    public Beer(String brewery, String name, String style, double lat, double lon) {
+    public Beer(String brewery, String name, String style, double lat, double lon, String location) {
         this.name = name;
         this.brewery = brewery;
         this.style = style;
         this.lat=lat;
         this.lon=lon;
+        this.location=location;
     }
     public String getName() {
         return name;
@@ -58,6 +60,15 @@ public class Beer {
 
     public void setLon(double lon) {
         this.lon = lon;
+    }
+
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
     }
 
     public String toString() {
