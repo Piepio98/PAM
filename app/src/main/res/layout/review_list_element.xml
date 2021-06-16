@@ -9,10 +9,6 @@
     android:layout_height="wrap_content"
     android:layout_margin="5dp">
 
-<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent">-->
-
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
@@ -26,9 +22,6 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="80dp">
 
-        <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
-        <!--                android:layout_width="match_parent"-->
-        <!--                android:layout_height="match_parent">-->
 
         <LinearLayout
             android:id="@+id/ReviewLinearLayout2"
@@ -85,29 +78,7 @@
 
         </LinearLayout>
 
-        <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
-
-        <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
-        <!--                android:layout_width="match_parent"-->
-        <!--                android:layout_height="match_parent">-->
-
-        <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
-
     </androidx.cardview.widget.CardView>
-
-<!--        <ImageView-->
-<!--            android:id="@+id/imageView"-->
-<!--            android:layout_width="70dp"-->
-<!--            android:layout_height="95dp"-->
-<!--            android:contentDescription="TODO"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toStartOf="@+id/cardView"-->
-<!--            app:layout_constraintHorizontal_bias="1.0"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:srcCompat="@drawable/ic_beer_glass" />-->
-
-<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
 
 
 </LinearLayout>

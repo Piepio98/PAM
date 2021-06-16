@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RatingBar;
 import android.widget.Toast;
 
 import pl.adamowski.beerhub.models.Review;
@@ -19,11 +20,14 @@ public class AddReviewActivity extends AppCompatActivity {
     private EditText brewery;
     private EditText style;
     private EditText comment;
+    //private RatingBar rBar;
 
     String nameString;
     String breweryString;
     String styleString;
     String commentString;
+    //Float ratingFloat;
+    //float rating;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +35,9 @@ public class AddReviewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_review);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         View add = findViewById(R.id.add_review_confirm);
+
+
+
         add.setOnClickListener(new View.OnClickListener() {
                                    @Override
                                    public void onClick(View V) {
@@ -55,11 +62,15 @@ public class AddReviewActivity extends AppCompatActivity {
         brewery = (EditText) findViewById(R.id.add_review_brewery);
         style = (EditText) findViewById(R.id.add_review_style);
         comment = (EditText) findViewById(R.id.add_review_comment);
+        //rBar = (RatingBar) findViewById(R.id.rating_bar);
 
         nameString = name.getText().toString();
         breweryString = brewery.getText().toString();
         styleString = style.getText().toString();
         commentString = comment.getText().toString();
+        //rating = rBar.getRating();
+        //ratingFloat = rating;
+
 
         Review review = new Review(null, nameString, breweryString, styleString, commentString);
         BeerDataBase database = BeerApplication.getINSTANCE();

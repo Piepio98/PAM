@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -63,6 +64,9 @@ public class ReviewListAdapter extends RecyclerView.Adapter<ReviewListAdapter.Vi
         TextView textViewComment= holder.textView_comment;
         textViewComment.setText(review.getComment());
 
+        //RatingBar textViewBar = holder.rBar;
+        //textViewBar.setRating(review.getRating());
+
     }
 
     @Override
@@ -83,6 +87,7 @@ public class ReviewListAdapter extends RecyclerView.Adapter<ReviewListAdapter.Vi
         public TextView textView_brewery;
         public TextView textView_style;
         public TextView textView_comment;
+        //public RatingBar rBar;
         public LinearLayout layout;
 
         public ViewHolder(@NonNull View itemView) {
@@ -93,6 +98,7 @@ public class ReviewListAdapter extends RecyclerView.Adapter<ReviewListAdapter.Vi
             textView_brewery = (TextView) itemView.findViewById(R.id.review_view_brewery);
             textView_style = (TextView) itemView.findViewById(R.id.review_view_style);
             textView_comment = (TextView) itemView.findViewById(R.id.review_view_comment);
+            //rBar = (RatingBar) itemView.findViewById(R.id.review_view_rating_bar);
             layout = (LinearLayout) itemView.findViewById(R.id.review_element_layout);
 
         }
