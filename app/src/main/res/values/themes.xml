@@ -32,7 +32,15 @@
     <style name="Theme.BeerHub.CardView">
         <item name="cardCornerRadius">10dp</item>
         <item name="cardBackgroundColor">@color/beery</item>
-        <item name="cardElevation">20dp</item>
+        <item name="cardElevation">10dp</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="contentPadding">10dp</item>
+    </style>
+
+    <style name="Theme.BeerHub.CardView_dark">
+        <item name="cardCornerRadius">10dp</item>
+        <item name="cardBackgroundColor">#FF8400</item>
+        <item name="cardElevation">10dp</item>
         <item name="cardUseCompatPadding">true</item>
         <item name="contentPadding">10dp</item>
     </style>

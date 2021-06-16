@@ -20,11 +20,11 @@ public class BeerListActivity extends AppCompatActivity {
     List<Beer> beers = new ArrayList<>();
 
 
-    Beer piwo1 = new Beer ("Piw Paw","Żurawia 32/34, 00-515 Warszawa","Pub",52.2283126,21.0138416,"PiwPaw+Akademia+Piwna/@52.2283187,21.0118031,17z/data=!3m1!4b1!4m5!3m4!1s0x471eccf231f623f9:0x24aac96bebe598ae!8m2!3d52.228302!4d21.0139329");
+    Beer piwo1 = new Beer ("Hopito Craft Beer & Pizza","Żurawia 32/34, 00-503 Warszawa","Pub",52.2285108,21.013837,"Hopito+Craft+Beer+%26+Pizza/@52.2285108,21.013837,21z/data=!4m5!3m4!1s0x471ecdbf000888d3:0x8cf3290ae64b7d0f!8m2!3d52.2284855!4d21.0139283");
     Beer piwo2 = new Beer ("Stan Umysłu","Efraima Schroegera 83, 01-828 Warszawa","Sklep",52.2802488,20.9438932,"Stan+Umysłu+-+sklep+i+galeria+z+dobrym+piwem/@52.2802488,20.9438932,21z/data=!3m1!5s0x471ecbccd9883247:0x32df682d4b0d1848!4m5!3m4!1s0x471ecbc8d3cf3eb1:0x576e8a34d627c1c8!8m2!3d52.28023!4d20.943995");
     Beer piwo3 = new Beer ("PIWOmaniaK","al. Jana Pawła II 61, 01-031 Warszawa","Sklep",52.2474527,20.9880623,"PIWOmaniaK/@52.2474527,20.9880623,21z/data=!4m5!3m4!1s0x471ecc78b49e199f:0xe60e6f301b63f748!8m2!3d52.2474483!4d20.9881967");
     Beer piwo4 = new Beer ("Piwny Kolektyw","Siemiatycka 36, 01-312 Warszawa","Sklep",52.2269573,20.9045905,"Piwny+Kolektyw+Regionalne+piwo/@52.2269573,20.9045905,20.75z/data=!4m5!3m4!1s0x471ecb2e3ee8cc07:0x91ef127a3ebce547!8m2!3d52.2269362!4d20.904672");
-    Beer piwo5 = new Beer ("Bierhalle","al. Jana Pawła II 82, 00-175 Warszawa","Restauracja",52.2564952,20.9829179,"Bierhalle/@52.2564952,20.9829179,17.25z/data=!3m1!5s0x471ecb8ecbf89f89:0x1d8cb9a09fdca61c!4m5!3m4!1s0x471ecb8ec592fb9b:0xf7aa1a8dcbef8fba!8m2!3d52.2559714!4d20.9841264");
+    Beer piwo5 = new Beer ("Piwodawca","Połczyńska 42, 01-336 Warszawa","Sklep/multitap",52.2189427,20.9100631,"Piwodawca/@52.2189427,20.9100631,21z/data=!4m5!3m4!1s0x471ecb2e3ee8cc07:0x7fff4926781641e8!8m2!3d52.2188961!4d20.9101385?hl=pl-PL");
     Beer piwo6 = new Beer ("JABEERWOCKY Craft Beer Pub","Nowogrodzka 12, 00-511 Warszawa","Pub",52.2297473,21.0154485,"JABEERWOCKY+Craft+Beer+Pub/@52.2297473,21.0154485,19z/data=!4m5!3m4!1s0x471eccf3dfbb29bb:0x8b9ec006c798f3c!8m2!3d52.2296774!4d21.0160091");
     Beer piwo7 = new Beer ("White Whale","Giełdowa 4E/U1, 01-211 Warszawa","Sklep",52.2309831,20.9757039,"White+Whale/@52.2309831,20.9757039,18.75z/data=!4m5!3m4!1s0x471ecd13e4efa9fd:0xd5c6c2686ab5f9c0!8m2!3d52.2309359!4d20.9763043");
 
