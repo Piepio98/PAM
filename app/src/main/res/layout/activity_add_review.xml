@@ -18,14 +18,15 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/add_review_brewery"
+
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:hint="Browar"
             android:textColorHint="#070707"
             app:hintTextColor="#070707">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
+                android:id="@+id/add_review_brewery"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/material" />
@@ -33,7 +34,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/add_review_name"
+
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
@@ -41,7 +42,8 @@
             android:textColorHint="#070707"
             app:hintTextColor="#070707">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
+                android:id="@+id/add_review_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/material" />
@@ -49,7 +51,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/add_review_style"
+
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="160dp"
@@ -57,7 +59,8 @@
             android:textColorHint="#070707"
             app:hintTextColor="#070707">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
+                android:id="@+id/add_review_style"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/material" />
@@ -77,14 +80,15 @@
         app:layout_constraintTop_toBottomOf="@+id/first_card_view">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/add_review_comment"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Komentarz"
             android:textColorHint="#070707"
             app:hintTextColor="#070707">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
+                android:id="@+id/add_review_comment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/material" />
