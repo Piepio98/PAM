@@ -41,30 +41,41 @@
     </androidx.cardview.widget.CardView>
 
 
-
     <androidx.cardview.widget.CardView
         android:id="@+id/second_card_view"
         style="@style/CardView.add_review"
-        android:layout_width="319dp"
-        android:layout_height="217dp"
+        android:layout_width="304dp"
+        android:layout_height="181dp"
         app:layout_constraintBottom_toTopOf="@+id/add_review_confirm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/first_card_view">
 
-
-
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/add_review_comment"
+            style="@style/Material"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="72dp"
-
+            android:layout_height="match_parent"
             android:hint="Komentarz"
-            app:layout_constraintBottom_toTopOf="@+id/add_review_confirm"
-            app:layout_constraintTop_toBottomOf="@+id/first_card_view"
-            app:layout_constraintVertical_bias="0.978"
-            tools:layout_editor_absoluteX="16dp" />
+            android:textColorHint="#070707" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/add_review_comment"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginBottom="72dp"-->
+
+        <!--            android:hint="Komentarz"-->
+        <!--            app:layout_constraintBottom_toTopOf="@+id/add_review_confirm"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/first_card_view"-->
+        <!--            app:layout_constraintVertical_bias="0.978"-->
+        <!--            tools:layout_editor_absoluteX="16dp" />-->
 
     </androidx.cardview.widget.CardView>
 

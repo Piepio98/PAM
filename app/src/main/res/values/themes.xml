@@ -52,4 +52,11 @@
         <item name="cardUseCompatPadding">true</item>
         <item name="contentPadding">10dp</item>
     </style>
+
+    <style name="Material">
+        <item name="colorPrimary">@color/beery</item>
+        <item name="colorOnSurface">@color/dark_beery</item>
+        <item name="colorError">@color/dark_beery</item>
+    </style>
+
 </resources>
