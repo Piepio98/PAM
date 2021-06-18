@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="beery">#FFC107</color>
     <color name="dark_beery">#FF9800</color>
+    <color name="material">#FF5722</color>
 </resources>

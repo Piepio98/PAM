@@ -17,35 +17,60 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/add_review_brewery"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
-            android:hint="Browar" />
+            android:hint="Browar"
+            android:textColorHint="#070707"
+            app:hintTextColor="#070707">
 
-        <EditText
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/material" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/add_review_name"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:hint="Nazwa piwa" />
+            android:layout_marginTop="80dp"
+            android:hint="Nazwa piwa"
+            android:textColorHint="#070707"
+            app:hintTextColor="#070707">
 
-        <EditText
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/material" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/add_review_style"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
-            android:hint="Styl" />
+            android:layout_marginTop="160dp"
+            android:hint="Styl"
+            android:textColorHint="#070707"
+            app:hintTextColor="#070707">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/material" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
     </androidx.cardview.widget.CardView>
-
 
     <androidx.cardview.widget.CardView
         android:id="@+id/second_card_view"
         style="@style/CardView.add_review"
         android:layout_width="304dp"
-        android:layout_height="181dp"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/add_review_confirm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,29 +78,18 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/add_review_comment"
-            style="@style/Material"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:hint="Komentarz"
-            android:textColorHint="#070707" >
+            android:textColorHint="#070707"
+            app:hintTextColor="#070707">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="wrap_content"
+                android:background="@color/material" />
 
         </com.google.android.material.textfield.TextInputLayout>
-
-        <!--        <EditText-->
-        <!--            android:id="@+id/add_review_comment"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_marginBottom="72dp"-->
-
-        <!--            android:hint="Komentarz"-->
-        <!--            app:layout_constraintBottom_toTopOf="@+id/add_review_confirm"-->
-        <!--            app:layout_constraintTop_toBottomOf="@+id/first_card_view"-->
-        <!--            app:layout_constraintVertical_bias="0.978"-->
-        <!--            tools:layout_editor_absoluteX="16dp" />-->
 
     </androidx.cardview.widget.CardView>
 
@@ -89,8 +103,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
-
-
 
     <ImageView
         android:id="@+id/imageView2"

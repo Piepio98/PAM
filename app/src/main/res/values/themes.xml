@@ -28,7 +28,6 @@
         <!-- Customize your theme here. -->
     </style>
 
-
     <style name="Theme.BeerHub.CardView">
         <item name="cardCornerRadius">10dp</item>
         <item name="cardBackgroundColor">@color/beery</item>
@@ -51,12 +50,6 @@
         <item name="cardElevation">5dp</item>
         <item name="cardUseCompatPadding">true</item>
         <item name="contentPadding">10dp</item>
-    </style>
-
-    <style name="Material">
-        <item name="colorPrimary">@color/beery</item>
-        <item name="colorOnSurface">@color/dark_beery</item>
-        <item name="colorError">@color/dark_beery</item>
     </style>
 
 </resources>
