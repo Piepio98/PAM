@@ -72,11 +72,26 @@ public class AddReviewActivity extends AppCompatActivity {
         //ratingFloat = rating;
 
 
-        Review review = new Review(null, nameString, breweryString, styleString, commentString);
-        BeerDataBase database = BeerApplication.getINSTANCE();
+        if(nameString.length() <=0 || breweryString.length() <=0 || styleString.length() <=0 || commentString.length() <=0)
+        {
+            if(nameString.length() <= 0) name.setError("Text can not be empty");
+            if(breweryString.length() <= 0) brewery.setError("Text can not be empty");
+            if(styleString.length() <= 0) style.setError("Text can not be empty");
+            if(commentString.length() <= 0) comment.setError("Text can not be empty");
+        }
 
-        ReviewDao reviewDao = database.reviewDao();
-        long id = reviewDao.saveInDataBase(review);
-        Toast.makeText(this,"Dodano nową recenzję nr: "+id, Toast.LENGTH_SHORT).show();
+        else {
+            Review review = new Review(null, nameString, breweryString, styleString, commentString);
+            BeerDataBase database = BeerApplication.getINSTANCE();
+
+            ReviewDao reviewDao = database.reviewDao();
+            long id = reviewDao.saveInDataBase(review);
+            Toast.makeText(this, "Dodano nową recenzję nr: " + id, Toast.LENGTH_SHORT).show();
+
+            name.setText("");
+            brewery.setText("");
+            style.setText("");
+            comment.setText("");
+        }
     }
 }

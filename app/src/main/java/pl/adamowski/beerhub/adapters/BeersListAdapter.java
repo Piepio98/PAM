@@ -8,14 +8,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import com.bumptech.glide.Glide;
+
 import java.util.List;
 
+import pl.adamowski.beerhub.BeerListActivity;
 import pl.adamowski.beerhub.R;
 import pl.adamowski.beerhub.models.Beer;
 
@@ -61,6 +65,8 @@ public class BeersListAdapter extends RecyclerView.Adapter<BeersListAdapter.View
 
         Button textViewButton = holder.textView_Button;
 
+        ImageView iconView = holder.imageView_icon;
+        Glide.with(iconView).load(beer.getIcon()).into(iconView);
 
         textViewButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,6 +94,7 @@ public class BeersListAdapter extends RecyclerView.Adapter<BeersListAdapter.View
         public TextView textView_Brewery;
         public TextView textView_Style;
         public Button textView_Button;
+        public ImageView imageView_icon;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -96,6 +103,7 @@ public class BeersListAdapter extends RecyclerView.Adapter<BeersListAdapter.View
             textView_Brewery = (TextView) itemView.findViewById(R.id.Brewery);
             textView_Style = (TextView) itemView.findViewById(R.id.Style);
             textView_Button = (Button) itemView.findViewById(R.id.button_location);
+            imageView_icon = (ImageView) itemView.findViewById(R.id.imageView);
 
 
         }

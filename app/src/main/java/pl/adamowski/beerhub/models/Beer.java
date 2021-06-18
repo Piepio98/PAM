@@ -9,18 +9,27 @@ public class Beer {
     private double lat;
     private double lon;
     private String location;
+    private String icon;
 
     public Beer() {
     }
 
+    public String getIcon() {
+        return icon;
+    }
 
-    public Beer(String brewery, String name, String style, double lat, double lon, String location) {
+    public void setIcon(String icon) {
+        this.icon = icon;
+    }
+
+    public Beer(String brewery, String name, String style, double lat, double lon, String location, String icon) {
         this.name = name;
         this.brewery = brewery;
         this.style = style;
         this.lat=lat;
         this.lon=lon;
         this.location=location;
+        this.icon=icon;
     }
     public String getName() {
         return name;
