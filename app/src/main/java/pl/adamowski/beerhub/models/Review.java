@@ -11,9 +11,6 @@ public class Review {
     public String Brewery;
     public String Style;
     public String Comment;
-   //public Float Rating;
-
-
 
     public Review(Integer id, String Name, String Brewery, String Style, String Comment) {
         this.id = id;
@@ -21,16 +18,8 @@ public class Review {
         this.Brewery = Brewery;
         this.Style = Style;
         this.Comment = Comment;
-        //this.Rating = Rating;
     }
 
-    //public Float getRating() {
-    //    return Rating;
-    //}
-
-    //public void setRating(Float rating) {
-    //    Rating = rating;
-    //}
 
     public Integer getId() {
         return id;

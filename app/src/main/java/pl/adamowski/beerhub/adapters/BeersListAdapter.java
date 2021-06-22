@@ -26,7 +26,6 @@ import pl.adamowski.beerhub.models.Beer;
 public class BeersListAdapter extends RecyclerView.Adapter<BeersListAdapter.ViewHolder> {
 
     private List<Beer> beers;
-    //konstruktor
     private Context context;
 
 
@@ -104,7 +103,6 @@ public class BeersListAdapter extends RecyclerView.Adapter<BeersListAdapter.View
             textView_Style = (TextView) itemView.findViewById(R.id.Style);
             textView_Button = (Button) itemView.findViewById(R.id.button_location);
             imageView_icon = (ImageView) itemView.findViewById(R.id.imageView);
-
 
         }
     }

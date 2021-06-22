@@ -36,10 +36,8 @@ public class ReviewListAdapter extends RecyclerView.Adapter<ReviewListAdapter.Vi
         Context context = parent.getContext();
         LayoutInflater inflater = LayoutInflater.from(context);
 
-        // Inflate the custom layout
         View contactView = inflater.inflate(R.layout.review_list_element, parent, false);
 
-        // Return a new holder instance
         ReviewListAdapter.ViewHolder viewHolder = new ReviewListAdapter.ViewHolder(contactView);
         return viewHolder;
     }
@@ -64,9 +62,6 @@ public class ReviewListAdapter extends RecyclerView.Adapter<ReviewListAdapter.Vi
         TextView textViewComment= holder.textView_comment;
         textViewComment.setText(review.getComment());
 
-        //RatingBar textViewBar = holder.rBar;
-        //textViewBar.setRating(review.getRating());
-
     }
 
     @Override
@@ -74,7 +69,6 @@ public class ReviewListAdapter extends RecyclerView.Adapter<ReviewListAdapter.Vi
         return reviews.size();
     }
 
-    //metoda pomocnicza do zwracania pozycji z viewHoldera
     public Review getReview(int number) {
 
         return (reviews != null) ? reviews.get(number) :  null;
@@ -87,7 +81,6 @@ public class ReviewListAdapter extends RecyclerView.Adapter<ReviewListAdapter.Vi
         public TextView textView_brewery;
         public TextView textView_style;
         public TextView textView_comment;
-        //public RatingBar rBar;
         public LinearLayout layout;
 
         public ViewHolder(@NonNull View itemView) {
@@ -98,7 +91,6 @@ public class ReviewListAdapter extends RecyclerView.Adapter<ReviewListAdapter.Vi
             textView_brewery = (TextView) itemView.findViewById(R.id.review_view_brewery);
             textView_style = (TextView) itemView.findViewById(R.id.review_view_style);
             textView_comment = (TextView) itemView.findViewById(R.id.review_view_comment);
-            //rBar = (RatingBar) itemView.findViewById(R.id.review_view_rating_bar);
             layout = (LinearLayout) itemView.findViewById(R.id.review_element_layout);
 
         }

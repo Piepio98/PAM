@@ -20,14 +20,11 @@ public class AddReviewActivity extends AppCompatActivity {
     private EditText brewery;
     private EditText style;
     private EditText comment;
-    //private RatingBar rBar;
 
     String nameString;
     String breweryString;
     String styleString;
     String commentString;
-    //Float ratingFloat;
-    //float rating;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,22 +59,18 @@ public class AddReviewActivity extends AppCompatActivity {
         brewery = (EditText) findViewById(R.id.add_review_brewery);
         style = (EditText) findViewById(R.id.add_review_style);
         comment = (EditText) findViewById(R.id.add_review_comment);
-        //rBar = (RatingBar) findViewById(R.id.rating_bar);
 
         nameString = name.getText().toString();
         breweryString = brewery.getText().toString();
         styleString = style.getText().toString();
         commentString = comment.getText().toString();
-        //rating = rBar.getRating();
-        //ratingFloat = rating;
-
 
         if(nameString.length() <=0 || breweryString.length() <=0 || styleString.length() <=0 || commentString.length() <=0)
         {
-            if(nameString.length() <= 0) name.setError("Text can not be empty");
-            if(breweryString.length() <= 0) brewery.setError("Text can not be empty");
-            if(styleString.length() <= 0) style.setError("Text can not be empty");
-            if(commentString.length() <= 0) comment.setError("Text can not be empty");
+            if(nameString.length() <= 0) name.setError("Pole nie może być puste");
+            if(breweryString.length() <= 0) brewery.setError("Pole nie może być puste");
+            if(styleString.length() <= 0) style.setError("Pole nie może być puste");
+            if(commentString.length() <= 0) comment.setError("Pole nie może być puste");
         }
 
         else {

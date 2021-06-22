@@ -9,31 +9,30 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/first_card_view"
         style="@style/CardView.add_review"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="411dp"
+        android:layout_height="213dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="1.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="160dp">
+            android:layout_height="175dp">
 
 
             <TextView
                 android:id="@+id/Name"
-                android:layout_width="215dp"
-                android:layout_height="41dp"
-                android:layout_marginTop="5dp"
+                android:layout_width="216dp"
+                android:layout_height="51dp"
                 android:layout_marginEnd="5dp"
                 android:text="Name"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintHorizontal_bias="0.565"
                 app:layout_constraintStart_toEndOf="@+id/imageView"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -45,48 +44,48 @@
                 android:text="Brewery"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintHorizontal_bias="0.541"
                 app:layout_constraintStart_toEndOf="@+id/imageView"
                 app:layout_constraintTop_toBottomOf="@+id/Style"
-                app:layout_constraintVertical_bias="0.625" />
+                app:layout_constraintVertical_bias="0.644" />
 
             <Button
                 android:id="@+id/button_location"
-                android:layout_width="105dp"
+                android:layout_width="130dp"
                 android:layout_height="47dp"
                 android:backgroundTint="#FF5722"
                 android:text="lokalizacja"
                 android:textColor="@android:color/white"
-                android:textSize="9sp"
+                android:textSize="13sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.018"
+                app:layout_constraintHorizontal_bias="0.02"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.982" />
+                app:layout_constraintVertical_bias="1.0" />
 
             <TextView
                 android:id="@+id/Style"
                 android:layout_width="214dp"
                 android:layout_height="21dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="5dp"
                 android:text="Style"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintHorizontal_bias="0.541"
                 app:layout_constraintStart_toEndOf="@+id/imageView"
                 app:layout_constraintTop_toBottomOf="@+id/Name" />
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="105dp"
-                android:layout_height="105dp"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
                 app:layout_constraintBottom_toTopOf="@+id/button_location"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.018"
+                app:layout_constraintHorizontal_bias="0.02"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.714"
+                app:layout_constraintVertical_bias="0.0"
                 app:srcCompat="@drawable/ic_location" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
