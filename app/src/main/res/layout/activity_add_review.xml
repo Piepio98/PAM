@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".AddReviewActivity">
 
-
     <androidx.cardview.widget.CardView
         android:id="@+id/first_card_view"
         style="@style/CardView.add_review"
